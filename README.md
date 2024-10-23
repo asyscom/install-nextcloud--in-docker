@@ -18,6 +18,12 @@ The project includes a `docker-compose.yml` file that defines the following cont
 - **Nextcloud**: The Nextcloud application for file management.
 - **MariaDB**: The database used to store Nextcloud data.
 - **Redis**: A caching system to improve Nextcloud performance.
+## Creating the Network
+
+Before running the Docker containers, you need to create a Docker network named `nextcloud`:
+
+```bash
+docker network create nextcloud
 
 
 ### Container Descriptions
